@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">ecole</string>
+    <string name="open">ecole</string>
+    <string name="close">ecole</string>
+    <string name="title_activity_profil">Profil</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="time8">8h</string>
+    <string name="time9">9h</string>
+    <string name="time10">10h</string>
+    <string name="time11">11h</string>
+    <string name="time12">12h</string>
+    <string name="time13">13h</string>
+    <string name="time14">14h</string>
+    <string name="time15">15h</string>
+    <string name="time16">16h</string>
+    <string name="time17">17h</string>
+    <string name="time18">18h</string>
+    <string name="updating">mise à jour</string>
+
+    <string name="title_activity_ajout_classe">AjoutClasse</string>
+
+    <string-array name="niveau">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="title_activity_classe_enseignant">ClasseEnseignant</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="absence_array">
+        <item>Présent</item>
+        <item>Absent</item>
+    </string-array>
+
+
+    <string name="title_activity_ajout_Enseignant">Ajouter Enseignant</string>
+    <string name="title_activity_ajout_Eleves">Ajouter les eleves</string>
+
+    <string-array name="jours">
+        <item>lundi</item>
+        <item>mardi</item>
+        <item>mercredi</item>
+        <item>jeudi</item>
+        <item>vendredi</item>
+        <item>samedi</item>
+    </string-array>
+    <string name="title_activity_classe_admin">Classe</string>
+    <string name="seance">Ajouter une scéance</string>
+    <string name="Emploi">Emploi</string>
+    <string name="Cahier">Cahier</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

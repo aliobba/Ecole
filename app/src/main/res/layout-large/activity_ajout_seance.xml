@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activities.EspaceAdmin.AjoutSeance"
+    android:id="@+id/addsc"
+
+    >
+    <TextView
+        android:id="@+id/txtaddSeance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une Seance à l'emploi"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#e8b201"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logoApp"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/monecole" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logoApp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtMat"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Matiere: "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/SpinnerMat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtMat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/txtMat"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/SpinnerMat"
+                    android:layout_toEndOf="@+id/SpinnerMat"
+                    android:text="plus"
+                    android:textSize="10dp"
+                    android:backgroundTint="#ffff"
+                    android:id="@+id/addMat"/>
+
+                <TextView
+                    android:id="@+id/txtEns"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMat"
+                    android:layout_marginTop="20dp"
+                    android:text="Enseignant "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/SprinnerEns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/SpinnerMat"
+                    android:layout_alignTop="@+id/txtEns"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txtHD"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtEns"
+                    android:layout_marginTop="20dp"
+                    android:text="Heure deb: "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/EditHd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/SprinnerEns"
+                    android:layout_below="@+id/SprinnerEns"
+                    android:layout_alignBaseline="@+id/txtHD"
+                    android:text="cliquer ici"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/txtHF"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtHD"
+                    android:layout_marginTop="20dp"
+                    android:text="Heure fin: "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editHF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/EditHd"
+                    android:layout_below="@+id/EditHd"
+                    android:layout_alignBaseline="@+id/txtHF"
+                    android:layout_marginTop="0dp"
+                    android:hint="cliquer ici"
+                    android:textSize="25dp" />
+
+               <TextView
+                android:id="@+id/txtJour"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHF"
+                android:layout_marginTop="20dp"
+                android:text="jour: "
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/Spinnerjours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editHF"
+                android:layout_below="@+id/editHF"
+                android:layout_alignBaseline="@+id/txtJour"
+                android:layout_marginTop="0dp"
+                android:entries="@array/jours"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="ajouter"
+            android:background="#ffff"
+            android:id="@+id/addsceance"/>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATTENTION: heure Fin = heure debut +1h "/>
+</LinearLayout>

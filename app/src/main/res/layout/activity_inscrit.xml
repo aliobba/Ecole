@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    tools:context=".Activities.inscrit">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="50dp"
+            >
+            <ImageButton
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="importez votre photo"
+                android:layout_marginTop="10dp"
+                android:textColor="#319238"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="190dp"
+        >
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Votre Nom"
+        android:textColorHint="#319238"
+        android:textColor="#319238"
+        android:backgroundTint="#319238"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Votre Prenom"
+            android:textColorHint="#319238"
+            android:textColor="#319238"
+            android:backgroundTint="#319238"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            />
+
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:textColorHint="#319238"
+            android:textColor="#319238"
+            android:backgroundTint="#319238"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            />
+
+
+         </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/inscrit"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="35dp"
+            android:paddingBottom="25dp"
+            app:cardBackgroundColor="#319238"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="25dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terminer"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="7dp"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

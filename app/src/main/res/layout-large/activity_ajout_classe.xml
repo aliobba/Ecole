@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/nv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Niveau de la classe"
+            android:layout_weight="1"
+
+            android:textSize="18dp"
+
+            />
+
+        <Spinner
+            android:id="@+id/nivSpinner"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/nv"
+            android:entries="@array/niveau"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/classeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editClassName"
+             android:layout_below="@+id/nivSpinner"
+            android:text="nom de la classe"
+            android:layout_weight="1"
+            android:textSize="18dp"
+
+            />
+
+        <EditText
+            android:id="@+id/editClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classeName"
+            android:hint=" le nom de la classe"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnAddClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editClassName"
+
+            android:backgroundTint="#e8b201"
+            android:text="Ajouter la classe" />
+
+
+
+</RelativeLayout>

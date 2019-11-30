@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Activities.EspaceAdmin.AjoutClasse">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Ajouter une classe"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/nv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/nivSpinner"
+            android:layout_marginTop="202dp"
+            android:text="Niveau de la classe" />
+
+        <Spinner
+            android:id="@+id/nivSpinner"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="228dp"
+            android:entries="@array/niveau"></Spinner>
+
+        <TextView
+            android:id="@+id/classeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editClassName"
+            android:layout_alignTop="@+id/nv"
+            android:paddingHorizontal="100dp"
+            android:text="nom de la classe" />
+
+        <EditText
+            android:id="@+id/editClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/nv"
+            android:layout_marginEnd="164dp"
+            android:hint=" le nom de la classe"
+            android:paddingHorizontal="100dp" />
+
+        <Button
+            android:id="@+id/btnAddClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nivSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#e8b201"
+            android:text="Ajouter la classe" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

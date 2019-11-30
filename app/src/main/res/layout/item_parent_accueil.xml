@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    app:cardBackgroundColor="#fff"
+    app:cardElevation="5dp"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heure Dédut"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/debut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heure Dédut"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heure Fin"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heure Dédut"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name Eleve"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="60dp"
+            />
+        <TextView
+            android:id="@+id/matiere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name Matiere"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nom"
+            android:layout_marginTop="20dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

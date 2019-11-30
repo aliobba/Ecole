@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.meyss.monecole.Activities.EspaceAdmin.ClasseAdmin">
+    <item
+        android:id="@+id/ajS"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/seance" />
+    <item
+        android:id="@+id/emploiTab"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/Emploi" />
+    <item
+        android:id="@+id/CahierTab"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/Cahier" />
+</menu>

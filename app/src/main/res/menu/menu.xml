@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <group android:id="@+id/menu">
+    <item android:id="@+id/accueil" android:title="Accueil" android:icon="@drawable/ic_action_home"/>
+    <item android:id="@+id/eleve" android:title="Mes Enfants/Emploi" android:icon="@drawable/ic_action_inscrit"/>
+    <item android:id="@+id/cahier" android:title="Cahier de texte" android:icon="@drawable/ic_action_classe"/>
+    <item android:id="@+id/logout" android:title="Déconnection" android:icon="@drawable/ic_action_logout"/>
+    </group>
+
+</menu>

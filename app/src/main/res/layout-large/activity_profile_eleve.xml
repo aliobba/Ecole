@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activities.EspaceAdmin.ProfileEleve">
+    <TextView
+        android:id="@+id/txtaddEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil Eleve"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#e8b201"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logoApp"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/aaa" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logoApp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtnomEleve"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Nom: "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nomElevetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtnomEleve"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/txtnomEleve"
+                    android:text="nom"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txtprenomEleve"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtnomEleve"
+                    android:layout_marginTop="20dp"
+                    android:text="Prenom: "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/prenomElevetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/nomElevetxt"
+                    android:layout_alignBaseline="@+id/txtprenomEleve"
+                    android:layout_below="@+id/nomElevetxt"
+                    android:text="prenom"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txtNaisEleve"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtprenomEleve"
+                    android:layout_marginTop="20dp"
+                    android:text="Naissance: "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/eleveNaistxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/nomElevetxt"
+                    android:layout_below="@+id/prenomElevetxt"
+                    android:text="date naissance"
+                    android:inputType="textEmailAddress"
+                    android:layout_alignBaseline="@+id/txtNaisEleve"
+
+                    android:textSize="25dp" />
+
+
+                <TextView
+                    android:id="@+id/txtClasse"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNaisEleve"
+                    android:layout_marginTop="20dp"
+                    android:text="Classe: "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ClasseTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/eleveNaistxt"
+                    android:layout_below="@+id/eleveNaistxt"
+                    android:layout_marginTop="0dp"
+                    android:layout_alignBaseline="@+id/txtClasse"
+                    android:text="classe"
+                    android:inputType="phone"
+                    android:textSize="25dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Modifier"
+                    android:background="#ffff"
+                    android:id="@+id/modifierClasseEleve"
+                    android:layout_toRightOf="@+id/ClasseTxt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignBottom="@+id/ClasseTxt"/>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/classSpinner"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/modifierClasseEleve"
+                    android:layout_alignBaseline="@+id/modifierClasseEleve"
+                    android:visibility="invisible"
+                    />
+                    />
+                <TextView
+                    android:id="@+id/txtParent"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ClasseTxt"
+                    android:layout_marginTop="20dp"
+                    android:text="Parent: "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/ParentTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/ClasseTxt"
+                    android:layout_below="@+id/ClasseTxt"
+                    android:layout_marginTop="0dp"
+                    android:layout_alignBaseline="@+id/txtParent"
+                    android:text="mailParent"
+                    android:inputType="phone"
+                    android:textSize="25dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Envouer mail"
+                    android:background="#ffff"
+                    android:id="@+id/mailToParent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ParentTxt"
+                    android:layout_alignBottom="@+id/ParentTxt"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

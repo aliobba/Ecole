@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/dialogMat"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="nom de la matiere"
+        android:id="@+id/nomMatiere"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/coefMat"
+        android:hint="1"
+        android:layout_below="@+id/nomMatiere"/>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#e8b201"
+    android:text="ajouter"
+    android:layout_below="@+id/coefMat"
+    android:id="@+id/submitMat"/>
+</RelativeLayout>
